@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#b98270">
+<meta name="description" content="GYMKANA: una experiencia colectiva de tres grupos, tres destinos y una palabra por descubrir.">
+<meta name="color-scheme" content="light">
+<title>GYMKANA · Una experiencia colectiva</title>
+<style>
+:root{--desktop:#d5a18a;--paper:#f5e6d4;--ink:#3d2e35;--dark:#704455;--light:#fff8ed;--shadow:#775046;--accent:#944f5c;--green:#dce5c6}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--desktop);background-image:radial-gradient(#fff5e660 1px,transparent 1px);background-size:20px 20px;color:var(--ink);font:14px 'Courier New',Consolas,monospace}button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #285a68;outline-offset:2px}.desktop{max-width:940px;margin:0 auto;padding:26px 16px 90px}.masthead{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.logo{font-weight:900;font-size:clamp(28px,5.5vw,51px);letter-spacing:-.075em;line-height:1}.sub{font-size:11px;letter-spacing:.13em;margin-top:9px}.floppy{font-size:40px;color:#7b4653;filter:drop-shadow(3px 3px 0 #f5dfc2)}.window{border:3px solid;border-color:var(--light) var(--shadow) var(--shadow) var(--light);background:var(--paper);box-shadow:5px 5px #7a514e66;margin:0 0 20px}.titlebar{background:linear-gradient(90deg,#744154,#be8183);color:#fff9ef;display:flex;justify-content:space-between;gap:10px;align-items:center;padding:7px 9px;font-weight:bold}.controls{display:flex;gap:4px}.controls span{display:grid;place-items:center;width:20px;height:19px;border:2px solid;border-color:#fff8eb #7e5d4b #7e5d4b #fff8eb;background:#ead5b8;color:#493139;font:12px Arial}.inner{padding:22px}.intro{line-height:1.7;max-width:750px}.muted{font-size:12px;line-height:1.65;color:#745b5e}.tiny{font-size:11px;letter-spacing:.1em;color:#875660}.big{font-size:clamp(21px,3.5vw,32px);line-height:1.15;margin:14px 0}.btn{border:2px solid;border-color:#fff9ee #735447 #735447 #fff9ee;background:#ead5b9;color:#49323a;padding:12px 17px;font-weight:bold;box-shadow:1px 1px #74564a;min-height:44px}.btn:hover{background:#f4dcc0}.btn:active{border-color:#735447 #fff9ee #fff9ee #735447;transform:translate(1px,1px)}.btn.primary{background:#d8e2c1}.btn:disabled{opacity:.45;cursor:not-allowed}.teams{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}.team{min-height:123px;display:flex;flex-direction:column;gap:12px;align-items:flex-start;justify-content:center;font-size:clamp(16px,2.5vw,22px)}.team span{font-size:11px;opacity:.75}.field{display:block;font-weight:bold;margin:18px 0 7px}.textinput,textarea{display:block;width:100%;max-width:620px;border:2px solid;border-color:#846257 #fffaf2 #fffaf2 #846257;background:#fffaf0;color:var(--ink);padding:12px;border-radius:0}.textinput{min-height:45px}.short{max-width:340px}textarea{min-height:130px;resize:vertical;line-height:1.5}.clue{background:#eacdb7;border-left:5px solid var(--accent);padding:17px 18px;margin:20px 0;line-height:1.65;font-size:clamp(15px,2.3vw,19px)}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:18px}.status{min-height:24px;line-height:1.6;margin-top:13px}.error{color:#a53642;font-weight:bold}.success{color:#385d36;font-weight:bold}.ticket{background:#e0e8c9;border:2px dashed #76926c;padding:22px;margin:24px 0;text-align:center}.ticket .letters{font-size:clamp(45px,10vw,86px);font-weight:900;letter-spacing:.17em;color:#3b5536}.ticket p{margin:9px 0}.chips{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0}.chip{border:2px solid #b38e7d;background:#fff5e5;padding:12px 16px;font-size:23px;font-weight:bold;letter-spacing:.18em}.progress{display:flex;gap:8px;margin:16px 0}.progress div{flex:1;min-height:14px;background:#e9c9b5;border:1px solid #966d5d}.progress .done{background:#98b187}.info{background:#f1d7c3;padding:12px 14px;border-left:4px solid #9a6370;line-height:1.6}.note{margin-top:22px}.hidden{display:none!important}.taskbar{position:fixed;bottom:0;inset-inline:0;display:flex;justify-content:space-between;gap:10px;padding:7px 12px;background:#e9c8af;border-top:3px solid #fff5e9;box-shadow:0 -1px #7f5b4b;font-size:11px}.start{padding:5px 10px;border:2px solid;border-color:#fff7eb #785a4e #785a4e #fff7eb;background:#e6d4b7;font-weight:bold}footer{text-align:center;padding:12px;font-size:11px;color:#644a49}@media(max-width:600px){.desktop{padding:15px 10px 80px}.inner{padding:15px}.teams{grid-template-columns:1fr}.team{min-height:72px;flex-direction:row;justify-content:space-between;align-items:center}.floppy{display:none}.btn{width:100%}.row .btn{flex:1 1 160px}.sub{letter-spacing:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Adaptación a pantallas táctiles y navegación con teclado. */
+html{ -webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:auto}
+body{overflow-wrap:anywhere}
+.skip{position:absolute;z-index:100;left:12px;top:-100px;background:#fff8ed;color:#3d2e35;padding:12px;border:3px solid #704455}
+.skip:focus{top:10px}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#app:focus{outline:none}
+.btn{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.textinput{font-size:16px}
+.clue{overflow-wrap:break-word}
+@media(max-width:600px){
+ .desktop{width:100%;padding:14px 12px 96px}
+ .window{max-width:100%}
+ .masthead{gap:10px}
+ .logo{font-size:clamp(31px,9vw,48px);letter-spacing:-.055em}
+ .sub{font-size:10px;line-height:1.6}
+ .teams{grid-template-columns:1fr;gap:10px}
+ .team{min-height:65px;flex-direction:row;justify-content:space-between;align-items:center}
+ .inner{padding:17px 15px}
+ .clue{font-size:17px;padding:17px 15px}
+ .taskbar{padding-bottom:max(8px,env(safe-area-inset-bottom));font-size:10px;align-items:center}
+ .btn{min-height:48px}
+ .ticket{padding:18px 12px}
+}
+@media(max-width:350px){.titlebar{font-size:11px}.controls span{width:17px}.taskbar{font-size:9px}.start{padding:5px}}
+@media(prefers-contrast:more){.muted{color:#442d32}.info{border-left-width:6px}.btn{border-color:#3d2e35}.textinput{border-color:#3d2e35}}
+</style>
+</head>
+<body>
+<a class="skip" href="#app">Saltar al contenido</a>
+<div class="desktop">
+<header class="masthead"><div><div class="logo" role="heading" aria-level="1">GYMKANA<span style="color:#fff1dc">_</span></div><div class="sub">UNA EXPERIENCIA COLECTIVA</div></div><div class="floppy" aria-hidden="true">▣</div></header>
+<section class="window"><div class="titlebar"><span>▣ bienvenida.exe</span><div class="controls" aria-hidden="true"><span>—</span><span>□</span><span>×</span></div></div><div class="inner"><div class="intro">Tres grupos. Tres lugares. Una palabra secreta.<br><strong>Leed la pista y escribid a qué lugar creéis que se refiere. Escuchad a las portavoces y responded oralmente antes de pulsar OK.</strong> Al final, compartid las letras entre los tres grupos.</div><p class="muted">El progreso se guarda solamente en este navegador, si permite almacenamiento local. No se envía información a ningún servidor. No escribáis datos personales.</p></div></section>
+<section class="window"><div class="titlebar"><span id="winTitle">▤ elegir_grupo.exe</span><div class="controls" aria-hidden="true"><span>—</span><span>□</span><span>×</span></div></div><main class="inner" id="app" tabindex="-1"></main></section>
+<footer>GYMKANA · MIRAR / INTERPRETAR / COMPARTIR</footer>
+</div><div class="taskbar" aria-label="Barra de estado"><span class="start">▦ INICIO</span><span id="barStatus">SESIÓN SIN GRUPO</span></div><div class="sr-only" id="aviso" role="status" aria-live="polite" aria-atomic="true"></div>
+<script>
+'use strict';
+/* Las pistas presentan los destinos sin revelar sus nombres.
+   El avance depende de la validación oral de las portavoces. */
+const LUGARES = [
+  {nombre:'biblioteca', pista:'Id a donde las palabras comunican sin ser dichas.'},
+  {nombre:'aula', pista:'Hubo un día en que dejamos de mirar el territorio como algo ajeno y empezamos a dibujarlo entre todes.'},
+  {nombre:'piscinas', pista:'No busques donde el conocimiento se imparte, sino donde las horas se olvidan y donde el contenido de los vasos importa menos que la compañia.'}
+];
+// El orden de los lugares cambia según el grupo.
+const RECORRIDOS = {
+  1: {orden:[0,1,2], letras:['I','I','D']},
+  2: {orden:[1,2,0], letras:['N','M','A']},
+  3: {orden:[2,0,1], letras:['T','I','D']}
+};
+// Cada prueba entrega una letra. En la puesta en común, las letras
+// se leen alternando los grupos 1, 2 y 3 por ronda.
+const CLAVE='gymkana_equipos_v6';
+const $ = id => document.getElementById(id);
+const escapar = texto => String(texto ?? '').replace(/[&<>"']/g,signo=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[signo]));
+let datos={grupo:null, etapas:{}};
+try {const guardado=JSON.parse(localStorage.getItem(CLAVE));if(guardado&&RECORRIDOS[guardado.grupo])datos=guardado;}catch{}
+let vista=datos.grupo?'etapa':'inicio';
+const guardar=()=>{try{localStorage.setItem(CLAVE,JSON.stringify(datos))}catch{}};
+function etapa(numero){return datos.etapas[numero] || {respuesta:'',correcto:false};}
+function completar(numero,cambios){datos.etapas[numero]={...etapa(numero),...cambios};guardar();}
+function ponerTitulo(texto){$('winTitle').textContent='▤ '+texto;$('barStatus').textContent=datos.grupo?'GRUPO 0'+datos.grupo+' · RECORRIDO ACTIVO':'SESIÓN SIN GRUPO';}
+function anunciar(texto){$('aviso').textContent=texto;}
+function enfocarPanel(){requestAnimationFrame(()=>{$('app').focus({preventScroll:true});});}
+function pintar(){
+  const raiz=$('app');
+  if(vista==='inicio'){
+    ponerTitulo('elegir_grupo.exe');
+    raiz.innerHTML=`<div class="tiny">PASO 01 / IDENTIFICACIÓN</div><h2 class="big">¿QUÉ GRUPO SOIS?</h2><p>Seleccionad vuestro grupo para recibir el primer destino.</p><div class="teams">${[1,2,3].map(g=>`<button type="button" class="btn team" data-grupo="${g}">GRUPO 0${g}<span>ENTRAR →</span></button>`).join('')}</div><p class="muted">Cada equipo recorrerá los lugares en un orden diferente. Guardad las letras hasta la puesta en común.</p>`;
+    raiz.querySelectorAll('[data-grupo]').forEach(b=>b.onclick=()=>{const g=Number(b.dataset.grupo);if(datos.grupo&&datos.grupo!==g&&!confirm('Cambiar de grupo sustituirá las respuestas guardadas en este navegador. ¿Continuar?'))return;if(datos.grupo!==g)datos={grupo:g,etapas:{}};guardar();vista='etapa';pintar();anunciar('Grupo '+g+' seleccionado');enfocarPanel();});return;
+  }
+  const recorrido=RECORRIDOS[datos.grupo];
+  const siguiente=[0,1,2].find(i=>!etapa(i).correcto);
+  if(siguiente===undefined){
+    vista='final';ponerTitulo('puesta_en_comun.txt');
+    raiz.innerHTML=`<div class="tiny">GRUPO 0${datos.grupo} / COMPLETADO</div><h2 class="big">ARCHIVO COMPLETADO ✓</h2><p>Estas son las letras que vuestro grupo ha conseguido:</p><div class="chips">${recorrido.letras.map(f=>`<span class="chip" aria-label="Letra ${f}">${f}</span>`).join('')}</div><div class="info"><strong>ESCUCHAD A LOS DEMÁS GRUPOS.</strong><br>Compartid oralmente vuestras letras en el orden en que las habéis conseguido. ¿Qué palabra puede formarse entre todos? Explicad vuestra interpretación a las portavoces.</div><p class="muted note">La solución final no aparece en la pantalla.</p><div class="row"><button class="btn" id="volver">↶ VOLVER AL INICIO</button><button class="btn" id="reiniciar">BORRAR MI PROGRESO</button></div>`;
+    $('volver').onclick=()=>{vista='inicio';pintar();enfocarPanel()};$('reiniciar').onclick=reiniciar;return;
+  }
+  vista='etapa';ponerTitulo(`lugar_0${siguiente+1}.txt`);
+  const lugar=LUGARES[recorrido.orden[siguiente]];
+  const actual=etapa(siguiente);
+  raiz.innerHTML=`<div class="tiny">GRUPO 0${datos.grupo} / LUGAR ${siguiente+1} DE 3</div><div class="progress" role="img" aria-label="${siguiente} de 3 pruebas completadas">${[0,1,2].map(i=>`<div class="${etapa(i).correcto?'done':''}"></div>`).join('')}</div><h2 class="big">LUGAR ${siguiente+1}</h2><div class="clue"><div class="tiny">PISTA / DESTINO</div>${escapar(lugar.pista)}</div><label class="field" for="respuesta">¿A qué lugar creéis que se refiere la pista?</label><input class="textinput short" id="respuesta" type="text" autocomplete="off" placeholder="Escribid vuestra idea (opcional)" value="${escapar(actual.respuesta)}"><p class="muted">Podéis continuar aunque no sepáis el nombre exacto.</p><div class="info note"><strong>AHORA ESCUCHAD A LAS PORTAVOCES DE LA ACTIVIDAD Y RESPONDED DE FORMA ORAL.</strong><br>Cuando os den el visto bueno, pulsad OK para recibir vuestra letra.</div><div class="row"><button type="button" class="btn primary" id="validar">✓ OK — VALIDADO</button></div><div class="row"><button type="button" class="btn" id="cambiar">⇦ CAMBIAR DE GRUPO</button><button type="button" class="btn" id="reiniciar">BORRAR MI PROGRESO</button></div>`;
+  $('respuesta').addEventListener('input',e=>completar(siguiente,{respuesta:e.target.value}));
+  $('validar').onclick=()=>{
+    completar(siguiente,{respuesta:$('respuesta').value,correcto:true});
+    mostrarPremio(siguiente);
+  };
+  $('cambiar').onclick=()=>{vista='inicio';pintar();enfocarPanel()};$('reiniciar').onclick=reiniciar;
+}
+function mostrarPremio(numero){
+  const {letras}=RECORRIDOS[datos.grupo];const premio=letras[numero];ponerTitulo('letra_desbloqueada.exe');
+  $('app').innerHTML=`<div class="tiny">GRUPO 0${datos.grupo} / LUGAR ${numero+1} SUPERADO</div><h2 class="big">¡PRUEBA VALIDADA!</h2><p>Habéis conseguido una letra para la puesta en común.</p><div class="ticket"><div class="tiny">LETRA 0${numero+1}</div><div class="letters">${premio}</div><p>RECORDAD ESTA LETRA</p></div><p class="muted">Compartidla con los otros grupos al finalizar el recorrido.</p><div class="row"><button type="button" class="btn primary" id="continuar">${numero===2?'VER MIS LETRAS →':'CONTINUAR →'}</button></div>`;
+  anunciar('Prueba validada. Habéis conseguido la letra '+premio);
+  enfocarPanel();
+  $('continuar').onclick=()=>{pintar();enfocarPanel()};
+}
+function reiniciar(){if(confirm('¿Borrar las respuestas y empezar de nuevo en este dispositivo?')){datos={grupo:null,etapas:{}};guardar();vista='inicio';pintar();anunciar('Progreso borrado');enfocarPanel()}}
+pintar();
+</script>
+</body>
+</html>
